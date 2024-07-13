@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('./imgs/background.jpg');
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    border-bottom: goldenrod solid 4px;
+}
+
+nav button{
+    border: none;
+    font-size: 22px;
+    background-color: transparent;
+    color: white;
+}
+
+nav button:hover{
+    border-bottom: 2px solid goldenrod;
+    cursor: pointer;
+}
+
+.home img{
+    border-radius: 100%;
+}
+
+.contact img{
+    max-width: 100%;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+}
+
+.home, .contact, .menu{
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.home{
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menu img{
+    border-radius: 15px;
+}
+
+.menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.home *{
+    padding-top: 25px;
+}
+
+.contact * {
+    padding: 25px;
+}
